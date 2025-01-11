@@ -5,7 +5,9 @@ export const AvatarSection = () => {
   return (
     <Avatar>
       <AvatarImage src={profile} />
-      <AvatarFallback>KS</AvatarFallback>
+      <AvatarFallback className="text-[90px] font-medium text-[#c7c7c7]">
+        KS
+      </AvatarFallback>
     </Avatar>
   );
 };
