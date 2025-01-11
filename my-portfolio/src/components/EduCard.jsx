@@ -5,9 +5,9 @@ const styles = {
     'h-full w-fit bg-white rounded-3xl p-5 flex flex-col justify-between min-[1900px]:p-10',
   pinnedContainer:
     'h-full w-fit bg-[#28D979] rounded-3xl p-5 flex flex-col justify-between min-[1900px]:p-10 text-white',
-  year: 'text-[18px] font-medium min-[1900px]:text-[32px]',
+  year: 'text-[18px] font-medium min-[1900px]:text-[30px]',
   tagContainer: 'flex flex-col',
-  profession: 'text-[18px] font-medium min-[1900px]:text-[30px]',
+  profession: 'text-[18px] font-medium min-[1900px]:text-[28px]',
   tags: 'text-[14px] text-[#149063] min-[1900px]:text-[20px]',
   pinnedTags: 'text-[14px] text-white min-[1900px]:text-[20px]',
   universityName: 'text-[16px] font-medium min-[1900px]:text-[24px]',

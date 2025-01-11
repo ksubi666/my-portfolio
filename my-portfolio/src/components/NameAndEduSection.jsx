@@ -10,7 +10,7 @@ const styles = {
   textContainer: 'flex flex-col gap-3',
   h1: 'text-[28px] font-semibold min-[1900px]:text-[36px]',
   h2: 'text-[24px] font-medium text-[#5C5C5C] min-[1900px]:text-[30px]',
-  eduContainer: 'flex gap-5 h-full',
+  eduContainer: 'flex gap-5 h-full min-[1900px]:gap-10',
 };
 
 export const NameAndEduSection = ({ name, profession }) => {
