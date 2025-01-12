@@ -1,11 +1,20 @@
 import { Button } from './ui/button';
 
-const TechCard = ({ title, data, links }) => {
+const styles = {
+  container:
+    'w-full bg-white h-full rounded-3xl relative p-5 flex items-center justify-center',
+  button: 'absolute -top-3',
+  linkContainer: 'h-full w-full flex items-center justify-center gap-6',
+  imgContainer: 'grid grid-cols-2 gap-x-10 gap-y-4',
+  img: 'max-w-10 max-h-10 min-[1900px]:max-w-[60px] min-[1900px]:max-h-[60px]',
+};
+
+export const TechCard = ({ title, data, links }) => {
   return (
-    <div className="w-full bg-white h-full rounded-3xl relative p-5 flex items-center justify-center">
-      <Button className="absolute -top-3">{title}</Button>
+    <div className={styles.container}>
+      <Button className={styles.button}>{title}</Button>
       {links ? (
-        <div className="h-full w-full flex items-center justify-center gap-6">
+        <div className={styles.linkContainer}>
           {data?.map((el, i) => {
             return (
               <a key={i} href={el.href} target="_blank">
@@ -15,20 +24,12 @@ const TechCard = ({ title, data, links }) => {
           })}
         </div>
       ) : (
-        <div className="grid grid-cols-2 gap-x-10 gap-y-4">
+        <div className={styles.imgContainer}>
           {data?.map((el, i) => {
-            return (
-              <img
-                key={i}
-                src={el.image}
-                className="max-w-10 max-h-10 min-[1900px]:max-w-[60px] min-[1900px]:max-h-[60px]"
-              />
-            );
+            return <img key={i} src={el.image} className={styles.img} />;
           })}
         </div>
       )}
     </div>
   );
 };
-
-export default TechCard;

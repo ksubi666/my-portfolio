@@ -12,12 +12,14 @@ const styles = {
   pinnedTags: 'text-[14px] text-white min-[1900px]:text-[20px]',
   universityName: 'text-[16px] font-medium min-[1900px]:text-[24px]',
   heart: 'min-[1900px]:size-[36px]',
+  pinnedSubContainer: 'flex justify-between items-center',
 };
+
 export const EduCard = ({ year, profession, tags, universityName, pinned }) => {
   return (
     <div className={pinned ? styles.pinnedContainer : styles.container}>
       {pinned ? (
-        <div className="flex justify-between items-center">
+        <div className={styles.pinnedSubContainer}>
           <h3 className={styles.year}>{year}</h3>
           <Heart fill="white" className={styles.heart} />
         </div>
