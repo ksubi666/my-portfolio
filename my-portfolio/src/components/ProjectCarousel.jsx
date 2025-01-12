@@ -5,54 +5,11 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
-import expense from '../assets/ExpenseTracker.png';
-import blogWeb from '../assets/BlogWeb.png';
-import pinetour from '../assets/pinetour.png';
-import portfolio from '../assets/Portfolio.png';
-import unread from '../assets/Unread.png';
-import todo from '../assets/toDoList.png';
+
 import { GithubIcon } from '@/assets/GithubIcon';
 import { Link } from 'lucide-react';
+import { projects } from '@/assets';
 
-const projects = [
-  {
-    title: 'Expense Tracker',
-    image: expense,
-    href: 'https://expense-tracker-fe-eight.vercel.app/',
-    github: 'https://github.com/ksubi666/expense-tracker',
-  },
-  {
-    title: 'Blog Web',
-    image: blogWeb,
-    href: 'https://blog-web-psi-ten.vercel.app/',
-    github: 'https://github.com/ksubi666/blog-web',
-  },
-  {
-    title: 'Unread Clone',
-    image: unread,
-    href: 'https://ksubi666.github.io/Unread/',
-    github: 'https://github.com/ksubi666/Unread',
-  },
-  {
-    title: 'Pinetour',
-    image: pinetour,
-    href: 'https://ksubi666.github.io/Pinetour/',
-    github: 'https://github.com/ksubi666/Pinetour',
-  },
-  {
-    title: 'Portfolio',
-    image: portfolio,
-    href: 'https://portfolio-ksubi666s-projects.vercel.app/',
-    github: 'https://github.com/ksubi666/Portfolio',
-  },
-
-  {
-    title: 'Todo App',
-    image: todo,
-    href: 'https://ksubi666.github.io/todo-list/',
-    github: 'https://github.com/ksubi666/todo-list',
-  },
-];
 export const ProjectCarousel = () => {
   return (
     <Carousel className="w-full">
